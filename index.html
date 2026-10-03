@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="以飞书多维表格为数据底座的小红书运营管理工作台" />
+  <title>小红书运营中台</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23ffdc73'/%3E%3Cpath d='M17 45V19h8v18h22v8z' fill='%23111a2d'/%3E%3Ccircle cx='43' cy='23' r='7' fill='%23e85d5d'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css?v=20260923-stable-v1" />
+  <link rel="stylesheet" href="refinements.css?v=20260923-v2" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">小</div><div><strong>运营中台</strong><span>项目负责人工作台</span></div></div>
+      <nav id="nav" aria-label="主要导航">
+        <button class="nav-item active" data-view="overview"><span>⌂</span>首页总览</button>
+        <button class="nav-item" data-view="data"><span>▥</span>数据中心</button>
+        <button class="nav-item" data-view="accounts"><span>◎</span>账号管理</button>
+        <button class="nav-item" data-view="business"><span>◈</span>激励活动</button>
+        <button class="nav-item" data-view="tasks"><span>✓</span>任务中心 <b>7</b></button>
+        <button class="nav-item" data-view="employees"><span>♙</span>员工中心</button>
+        <button class="nav-item" data-view="orders"><span>↗</span>订单分析</button>
+        <button class="nav-item" data-view="secrets"><span>密</span>业务密令</button>
+        <button class="nav-item" data-view="tools"><span>⌘</span>工具箱</button>
+        <button class="nav-item" data-view="logs"><span>◷</span>运行日志 <b>1</b></button>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="connection"><span class="status-dot amber"></span><div><strong>飞书底表待连接</strong><small>当前展示业务结构示例</small></div></div>
+        <div class="user"><div class="avatar">管</div><div><strong>未登录</strong><span>授权后记录修改人</span></div><button id="login">飞书登录</button></div>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div><div class="crumb">小红书项目组 / <span id="crumb">首页总览</span></div><h1 id="title">首页总览</h1></div>
+        <div class="top-actions"><span class="sync-copy">飞书同步：<b>未连接</b></span><button class="icon-btn" data-action="refresh" aria-label="刷新">↻</button><button class="primary" data-action="add">＋ 新增记录</button></div>
+      </header>
+      <section id="app"></section>
+    </main>
+  </div>
+  <div id="drawer" class="drawer-layer" aria-hidden="true"></div>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
