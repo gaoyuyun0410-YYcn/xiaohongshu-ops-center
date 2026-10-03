@@ -7,7 +7,7 @@
   <title>小红书运营中台</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23ffdc73'/%3E%3Cpath d='M17 45V19h8v18h22v8z' fill='%23111a2d'/%3E%3Ccircle cx='43' cy='23' r='7' fill='%23e85d5d'/%3E%3C/svg%3E" />
   <link rel="stylesheet" href="styles.css?v=20260923-stable-v1" />
-  <link rel="stylesheet" href="refinements.css?v=20260923-v2" />
+  <link rel="stylesheet" href="refinements.css?v=20261003-v3" />
 </head>
 <body>
   <div class="shell">
@@ -16,14 +16,16 @@
       <nav id="nav" aria-label="主要导航">
         <button class="nav-item active" data-view="overview"><span>⌂</span>首页总览</button>
         <button class="nav-item" data-view="data"><span>▥</span>数据中心</button>
+        <button class="nav-item" data-view="reports"><span>周</span>经营报告</button>
         <button class="nav-item" data-view="accounts"><span>◎</span>账号管理</button>
         <button class="nav-item" data-view="business"><span>◈</span>激励活动</button>
         <button class="nav-item" data-view="tasks"><span>✓</span>任务中心 <b>7</b></button>
+        <button class="nav-item" data-view="experiments"><span>试</span>业务测试</button>
         <button class="nav-item" data-view="employees"><span>♙</span>员工中心</button>
         <button class="nav-item" data-view="orders"><span>↗</span>订单分析</button>
         <button class="nav-item" data-view="secrets"><span>密</span>业务密令</button>
         <button class="nav-item" data-view="tools"><span>⌘</span>工具箱</button>
-        <button class="nav-item" data-view="logs"><span>◷</span>运行日志 <b>1</b></button>
+        <button class="nav-item" data-view="logs"><span>◷</span>日志中心 <b>1</b></button>
       </nav>
       <div class="sidebar-foot">
         <div class="connection"><span class="status-dot amber"></span><div><strong>飞书底表待连接</strong><small>当前展示业务结构示例</small></div></div>
@@ -40,6 +42,6 @@
   </div>
   <div id="drawer" class="drawer-layer" aria-hidden="true"></div>
   <div id="toast" class="toast" role="status"></div>
-  <script src="app.js"></script>
+  <script src="app.js?v=20261003-v3"></script>
 </body>
 </html>
